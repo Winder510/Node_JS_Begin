@@ -1,0 +1,4 @@
+1. View Engine( template Engine): EJS 
+ Nggoài ra để hỗ trỡ đọc các câu lệnh với nhiều phiên bản của express thì  có thể dùng babel/core babel/..
+2. dotenv: để đọc sử dụng đc flie .env 
+3. nodemon : auto restart server

@@ -2,3 +2,6 @@
  Nggoài ra để hỗ trỡ đọc các câu lệnh với nhiều phiên bản của express thì  có thể dùng babel/core babel/..
 2. dotenv: để đọc sử dụng đc flie .env 
 3. nodemon : auto restart server
+4. Mo hinhf MVC 
+5. cli: command line interface, nó cung cấp cho em giao diện để gõ dòng lệnh. sequelize bắt buộc phải dùng, vì nó kết nối tới db. còn cli là công cụ hỗ trợ em thao tác với code
+6. View engine giúp code html mà có thể truyền các giá trị các biến từ file controller sang file views

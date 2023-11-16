@@ -1,6 +1,6 @@
 // get the client
 import { router } from 'json-server';
-import mysql from 'mysql2';
+import mysql from 'mysql2/promise';
 
 // create the connection to database
 const connection = mysql.createConnection({
@@ -8,7 +8,6 @@ const connection = mysql.createConnection({
     user: 'root',
     database: 'nodejsbasic'
 });
-
 // simple query
 // connection.query(
 //     'SELECT * FROM `user` ',

@@ -46,9 +46,8 @@
                                 <%= dataUser[i].largeName%>
                             </td>
                             <td>
-                                <button type="button">
-                                    Detail
-                                </button>
+                                <a href="/detail/user/<%= dataUser[i].id %>" target="_blank"
+                                    class="btnDetail">Detail</a>
                                 <button type="button">
                                     Edit
                                 </button>
@@ -62,7 +61,32 @@
 
             </table>
         </div>
-
+        <div class="main">
+            <div class="creat-user-container">
+                <form action="/creat-new-user" method="post">
+                    <h2 style="color: blue; font-weight: 600;"> Creat new user </h2>
+                    <div>
+                        <label for="" class="lbltext">First Name </label>
+                        <input type="text" name="firstName">
+                    </div>
+                    <div>
+                        <label for="" class="lbltext">Last Name </label>
+                        <input type="text" name="lastName">
+                    </div>
+                    <div>
+                        <label for="" class="lbltext">Email</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div>
+                        <label for="" class="lbltext">Address </label>
+                        <input type="text" name="address">
+                    </div>
+                    <div>
+                        <button type="submit" class="btnSubmit"> Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 </body>

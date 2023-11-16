@@ -26,3 +26,31 @@ body {
     background-color: #04AA6D;
     color: white;
 }
+
+.main {
+    display: block;
+    text-align: center;
+}
+
+.creat-user-container {
+    display: inline-block;
+    padding: 15px;
+
+}
+
+.lbltext {
+    display: flex;
+}
+
+.btnSubmit {
+    margin-top: 15px;
+}
+
+.btnDetail {
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 2px;
+    background-color: #efefef;
+    padding: 3px 6px;
+
+}

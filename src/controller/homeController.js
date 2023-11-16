@@ -1,3 +1,4 @@
+import e from 'express';
 import mysql from 'mysql2/promise';
 
 let getHomePage = async (req, res) => {
@@ -22,7 +23,13 @@ let getDetailPage = async (req, res) => {
     const [rows, fields] = await connection.execute(`SELECT * FROM user where id =?`, [userId]);
     return res.send(JSON.stringify(rows));
 }
+let creatNewUser = async (req, res) => {
+    let { firstName, lastName, email, address } = req.body;
+    const connection = await mysql.createConnection({ host: 'localhost', user: 'root', database: 'nodejsbasic' });
+    const [rows, fields] = await connection.execute(`insert into user(firstName,largeName,email,address) values (?,?,?,?)`, [firstName, lastName, email, address]);
 
+    return res.redirect('/');
+}
 module.exports = {
-    getHomePage, getDetailPage
+    getHomePage, getDetailPage, creatNewUser
 }
